@@ -27,9 +27,9 @@ public class Product implements Serializable{
 	private String name;
 	
 	@Column(columnDefinition = "TEXT")
-	private String descripton;
+	private String description;
 	private Double price;
-	private String img_url;
+	private String imgUrl;
 	
 	@Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
 	private Instant date;
@@ -44,13 +44,17 @@ public class Product implements Serializable{
 	}
 
 	public Product(Long id, String name, String descripton, Double price, String imgUrl, Instant date) {
+		super();
 		this.id = id;
 		this.name = name;
-		this.descripton = descripton;
+		this.description = descripton;
 		this.price = price;
-		this.img_url = imgUrl;
+		this.imgUrl = imgUrl;
 		this.date = date;
 	}
+
+	
+
 
 	public Long getId() {
 		return id;
@@ -69,11 +73,11 @@ public class Product implements Serializable{
 	}
 
 	public String getDescripton() {
-		return descripton;
+		return description;
 	}
 
 	public void setDescripton(String descripton) {
-		this.descripton = descripton;
+		this.description = descripton;
 	}
 
 	public Double getPrice() {
@@ -85,11 +89,11 @@ public class Product implements Serializable{
 	}
 
 	public String getImgUrl() {
-		return img_url;
+		return imgUrl;
 	}
 
-	public void setImgUrl(String imgUrl) {
-		this.img_url = imgUrl;
+	public void setImgUrl(String img_url) {
+		this.imgUrl = img_url;
 	}
 
 	public Instant getDate() {
@@ -104,9 +108,8 @@ public class Product implements Serializable{
 		return categories;
 	}
 
-	@Override
-	public int hashCode() {
-		return Objects.hash(id);
+	public static long getSerialversionuid() {
+		return serialVersionUID;
 	}
 
 	@Override

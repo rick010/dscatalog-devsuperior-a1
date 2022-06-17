@@ -44,7 +44,6 @@ public class Product implements Serializable{
 	}
 
 	public Product(Long id, String name, String descripton, Double price, String imgUrl, Instant date) {
-		super();
 		this.id = id;
 		this.name = name;
 		this.description = descripton;

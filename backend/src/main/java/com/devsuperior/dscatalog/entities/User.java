@@ -16,8 +16,6 @@ import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
-import org.springframework.context.annotation.Configuration;
-
 @Entity
 @Table(name = "tb_user")
 public class User implements Serializable{

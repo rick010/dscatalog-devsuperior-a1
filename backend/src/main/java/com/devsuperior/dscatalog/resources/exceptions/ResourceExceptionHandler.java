@@ -47,7 +47,7 @@ public class ResourceExceptionHandler {
 		ValidationError err = new ValidationError();
 		err.setTimestamp(Instant.now());
 		err.setStatus(status.value());
-		err.setError("Database exception");
+		err.setError("Validation exception");
 		err.setMessage(e.getMessage());
 		err.setPath(request.getRequestURI());
 		

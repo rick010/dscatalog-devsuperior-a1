@@ -51,10 +51,7 @@ public class Product implements Serializable{
 		this.imgUrl = imgUrl;
 		this.date = date;
 	}
-
 	
-
-
 	public Long getId() {
 		return id;
 	}
@@ -122,6 +119,4 @@ public class Product implements Serializable{
 		Product other = (Product) obj;
 		return Objects.equals(id, other.id);
 	}
-	
-	
 }

@@ -112,5 +112,4 @@ public class ProductDTO implements Serializable{
 	public List<CategoryDTO> getCategories() {
 		return categories;
 	}
-
 }

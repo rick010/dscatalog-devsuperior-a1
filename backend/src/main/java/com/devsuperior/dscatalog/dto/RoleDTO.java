@@ -42,6 +42,4 @@ public class RoleDTO implements Serializable{
 	public static long getSerialversionuid() {
 		return serialVersionUID;
 	}
-	
-	
 }
